@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="slider">
+            <figure>
+                <img id="sliderImage" src="img/drzewo.jpg" alt="slider image">
+                <button id="sliderLeftButton" onclick="previousImage();" disabled="disabled"><i class="fas fa-chevron-left"></i></button>
+                <button id="sliderRighttButton" onclick="nextImage();"><i class="fas fa-chevron-right"></i></button>
+                <figcaption>
+                    <span id="current">1</span>/5
+                </figcaption>
+            </figure>
+        </section>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
