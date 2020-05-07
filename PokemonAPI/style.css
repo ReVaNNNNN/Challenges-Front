@@ -61,6 +61,7 @@ body {
 
 .catalog__button:hover {
     background-color: #fff;
+    font-family: inherit;
     cursor: pointer;
     color: var(--primary-color);
     border-color: var(--primary-color);
@@ -79,3 +80,112 @@ body {
 .card__image {
     width: 250px;
 }
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.search__input {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: inherit;
+    border: none;
+    width: 300px;
+    transition: border-bottom-color 0.5s;
+    border-bottom: 3px solid var(--secondary-color--light);
+}
+
+.search__input:focus {
+    outline: none;
+    border-bottom-color: var(--primary-color--light);
+}
+
+.search__input::-webkit-input-placeholder {
+    color: #666;
+}
+
+.search_label {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+    display: block;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.search__input:placeholder-shown + .search__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+}
+
+.hide {
+    display: none;
+  }
+  
+.bold {
+    font-weight: 700;
+}
+
+.catalog__loader,
+.catalog__loader:before,
+.catalog__loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.catalog__loader {
+  color: var(--primary-color--light);
+  font-size: 10px;
+  margin: 0px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.catalog__loader:before,
+.catalog__loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  color: var(--secondary-color--light);
+}
+.catalog__loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.catalog__loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+
+
