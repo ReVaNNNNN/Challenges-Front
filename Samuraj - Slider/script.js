@@ -34,6 +34,7 @@ function checkPointerValid(pointer) {
 
     if (pointer > (imageArray.length - 2)) {
         rightButton.disabled = true;
+        
     } else {
         rightButton.disabled = false;
     }

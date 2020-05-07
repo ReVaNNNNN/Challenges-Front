@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="wrapper">
-        <header>
-            <h1>Pokemon catalog</h1>
-            <p>
-                <input type="text" placeholder="Search"/>
-            </p>
+<body data-gr-c-s-loaded="true">
+   <main class="catalog">
+        <header class="catalog__header">
+            <h1 class="catalog__heading">
+                <span class="catalog__heading--primary">Pokemon</span> catalog
+            </h1>
+            <div class="search">
+                <input type="text" class="search__input" id="search" placeholder="Search">
+                <label for="search" class="search__label">Search</label>
+            </div>
         </header>
-        <main>
-
-            <button>Load More</button>
-        </main>
-    </div>
-    <script src="script.js"></script>
+        <section class="catalog__content">
+            <p class="catalog__info hide" data-info>
+                There are no results
+            </p>
+        </section>
+        <footer class="catalog__footer">
+            <button class="catalog__button" data-button>
+                Load More
+            </button>  
+            <div class="catalog__loader hide" data-loader=""></div>
+        </footer>
+   </main>
+   <script src="script.js"></script>
+   <script>
+       //const catalog = new PokemonTCGCatalog();
+       //catalog.initializeCatalog();
+   </script>
 </body>
 </html>
