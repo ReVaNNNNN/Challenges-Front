@@ -18,7 +18,7 @@
                 <label for="search" class="search__label">Search</label>
             </div>
         </header>
-        <section class="catalog__content">
+        <section class="catalog__content" data-content>
             <p class="catalog__info hide" data-info>
                 There are no results
             </p>
@@ -32,8 +32,8 @@
    </main>
    <script src="script.js"></script>
    <script>
-       //const catalog = new PokemonTCGCatalog();
-       //catalog.initializeCatalog();
+       const catalog = new PokemonTCGCatalog();
+       catalog.initializeCatalog();
    </script>
 </body>
 </html>
