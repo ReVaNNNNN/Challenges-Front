@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 5% auto 0 auto;
+}
+
+.wrapper header {
+    min-height: 100px;
+}
+
+.wrapper header h1 {
+    float: left;
+    padding: 0 5%;
+}
+
+.wrapper header p {
+    float: right;
+    padding: 0 5%;
+}
+
+.wrapper header p input {
+   border: none;
+   border-bottom: 2px solid orangered;
+}
